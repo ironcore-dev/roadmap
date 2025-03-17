@@ -1,24 +1,24 @@
 ---
-name: Epic  💡
-about: IronCore epic for cross project efforts.
+name: Epic 🚀
+about: Track high-level project progress across multiple areas.
 labels: ["epic"]
 ---
 
-# Summary
-A high-level summary of what this epic aims to achieve, addressing the problem or goal it will solve.
+# Summary  
+_A brief overview of what this epic aims to achieve and why it matters._
 
-## In scope & Out of Scope
-Define what is included in the epic and what is explicitly excluded to prevent scope creep.
+## Scope  
+### ✅ In Scope  
+- _Clearly define what's included in this epic._  
+### ❌ Out of Scope  
+- _Define what is explicitly excluded to prevent scope creep._
 
-## Acceptance Criteria
-- Example 1: Epic goal is met when...
-- Example 2: Epic is completed once...
+## Acceptance Criteria  
+- [ ] _Criteria 1_  
+- [ ] _Criteria 2_
 
-
-## Action Items 
-
-- [ ] Set labels e.g. `compute`, `storage`
-- [ ] Set milestones 
-- [ ] Link dependent issues
-- [ ] Timeline
-- [ ] Stakeholders and Ownership
+## Action Items  
+- [ ] Assign labels (e.g., `networking`, `storage`)  
+- [ ] Set milestones  
+- [ ] Assign dependent sub-issues
+- [ ] Set estimated completion date
