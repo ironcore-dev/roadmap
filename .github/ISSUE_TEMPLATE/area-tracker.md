@@ -7,7 +7,7 @@ labels: ["kind/tracking"]
 # Summary
 This issue tracks **ongoing minor improvements, fixes, and refactors** in the **{{AREA}}** area for **{{MONTH}} {{YEAR}}**. It provides visibility into continuous progress, helps with monthly reporting, and consolidates scattered micro-tasks under one parent.
 
-> ⚠️ This issue will be closed at the end of the month. Any open sub-issues will be automatically moved to the next month’s tracker.
+⚠️ This issue will be closed at the end of the month. Any open sub-issues will be automatically moved to the next month’s tracker.
 
 ---
 
@@ -28,5 +28,5 @@ This issue tracks **ongoing minor improvements, fixes, and refactors** in the **
 
 ## Action Items
 - [ ] Assign labels (e.g., `area/{{AREA}}`, `kind/tracking`, `lifecycle/active`)
-- [ ] Set milestone (e.g., `{{MONTH}} {{YEAR}}`)
+- [ ] Set milestone
 - [ ] Add/Link sub-issues for each micro-task
