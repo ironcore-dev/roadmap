@@ -3,41 +3,77 @@ name: Enhancement 🚀
 about: Track high-level project progress across multiple areas.
 ---
 
-# **Summary**   
-_A brief overview of what this enhancement aims to achieve and why it matters._
-
-## **Scope**  
-### ✅ **In Scope**  
-- _Clearly define what's included in this epic._  
-### ❌ **Out of Scope**  
-- _Define what is explicitly excluded to prevent scope creep._
+# **Summary**
+<!-- 
+A brief overview of what this enhancement aims to achieve and why it matters.
+Focus on the problem it solves, why it's important, and what outcome we want.
+-->
+_A brief overview._
 
 ---
+
+## **Scope**
+
+### ✅ **In Scope**
+<!-- 
+Clearly define what's included in this enhancement.
+What work or features are part of this? Be specific.
+-->
+- 
+
+### ❌ **Out of Scope**
+<!-- 
+Define what is explicitly excluded to prevent scope creep.
+Mention anything that might sound related but won’t be tackled here.
+-->
+- 
+
+---
+
 ## **Responsible Areas**
-- Area 1
-- Area 2
+<!-- 
+Pick one or more of the following areas this enhancement touches:
+Ironcore API, Metal Automation, Networking, Virtualization, Storage, UI, Gardener Extension, Documentation
+-->
+- 
 
 ---
 
-## **Contact Person**
-- John Doe @johndoe 
 
+## **Contributors**
+<!-- 
+List all contributors, collaborators, or teams actively participating in this enhancement.
+Include GitHub handles.
+-->
+- @exampleuser1  
+- @exampleuser2
 ---
 
 ## **Acceptance Criteria**
+<!-- 
+Organize by area (if needed), and list what needs to be true for this enhancement to be considered “done.”
+-->
 
 - ### Area 1
-   - [ ] _Criteria 1_
+  - [ ]
 
 - ### Area 2
-   - [ ] _Criteria 1_
+  - [ ]
 
 - ### Common
-   - [ ] _Criteria 1_
+  - [ ]
 
+---
 
-## **Action Items**  
-- [x] Assign labels (e.g.,  `area/operatingsystem`, `kind/design`)
-- [x] Set milestone (`H1/2025`).  
-- [ ] Assign dependent sub-issues (e.g., OCI spec writing, component adaptations, tooling).  
-- [x] Assign Contact Person
+## **Action Items**
+<!-- 
+Please ensure all items below are checked before or during issue creation.
+Make sure sub-issues are created for each relevant area.
+Add the issue to the "Roadmap" project.
+-->
+- [ ] Assign labels (e.g., `area/ironcore-api`, `kind/design`)
+- [ ] Set milestone (e.g., `H1/2025`)
+- [ ] Assign dependent sub-issues in each required area
+- [ ] Assign an owner to the issue using the GitHub "Assignee" field
+- [ ] List all contributors in the "Contributors" section above
+- [ ] Add this issue to the `Roadmap` project board
