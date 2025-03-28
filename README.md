@@ -17,10 +17,12 @@ Each issue in this repository represents a **high-level enhancement or epic**, b
 An enhancement is typically:
 
 - A **cross-area initiative** requiring collaboration across multiple teams or components
+- A significant effort within a single area that has a broad or strategic impact
 - A **larger, structured effort** that may span multiple weeks or months
 - A meaningful improvement that **moves Ironcore forward as a product**
 - Something that introduces **new architecture, concepts, or user-facing capabilities**
 - Worth tracking in monthly/quarterly reports to stakeholders
+
 
 Examples:
 - “Ironcore as a Product” definition and strategy  
@@ -51,18 +53,6 @@ These should be filed in the respective component/project repositories and, if n
   - Acceptance criteria
   - Action items
   - Sub-issues across relevant areas
-- **Area Tracker Issues** are created monthly to track minor/iterative progress within specific domains (e.g., `[Tracker] Networking – Mar 2025`)
-  - These roll over open sub-issues to the next month
-  - Useful for internal progress and reporting  
-
----
-
-## 📅 Monthly Process
-
-At the end of each month:
-- All **Area Tracker Issues** are closed  
-- Any **open sub-issues** are automatically moved to the next month’s tracker (via GitHub automation)  
-- Enhancements are updated with links to sub-issues and progress summaries
 
 ---
 
