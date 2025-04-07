@@ -1,5 +1,7 @@
 # Ironcore Enhancements
 
+[![GitHub License](https://img.shields.io/static/v1?label=License&message=Apache-2.0&color=blue)](LICENSE)
+
 Central tracking repository for cross-project initiatives, large-scale enhancements, or epics across the Ironcore ecosystem.
 
 ---
