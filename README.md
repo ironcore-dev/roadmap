@@ -2,6 +2,9 @@
 
 [![GitHub License](https://img.shields.io/static/v1?label=License&message=Apache-2.0&color=blue)](LICENSE)
 
+[![REUSE status](https://api.reuse.software/badge/github.com/ironcore-dev/roadmap)](https://api.reuse.software/info/github.com/ironcore-dev/roadmap)
+[![GitHub License](https://img.shields.io/static/v1?label=License&message=Apache-2.0&color=blue)](LICENSE)
+
 Central tracking repository for cross-project initiatives, large-scale enhancements, or epics across the Ironcore ecosystem.
 
 ---
