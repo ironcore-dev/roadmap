@@ -1,3 +1,8 @@
+---
+name: Area Improvements 🚀
+about: Tracks ongoing improvements, refactorings, fixes, and minor updates
+---
+
 ## 📝 Summary
 This issue tracks **ongoing improvements, refactorings, fixes, and minor updates** in this area that are **not part of larger cross-area Enhancements**.  
 
