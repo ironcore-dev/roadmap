@@ -67,7 +67,7 @@ If you have an idea that may qualify as an enhancement:
 3. File an enhancement issue here using the [`Epic/Initiative` issue template](./.github/ISSUE_TEMPLATE)
 4. Link relevant sub-issues under it as work progresses
 
-For minor monthly work, contribute through the appropriate `[Tracker]` issue for your area.
+For minor monthly work, contribute through the appropriate `[Improvements]` issue for your area.
 
 ---
 
