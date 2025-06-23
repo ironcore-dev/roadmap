@@ -1,8 +1,8 @@
-name: Sync Roadmap Items Daily
+name: Create Area Labels and Milestones Daily
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Runs every day at 06:00 UTC (8 AM CEST / 7 AM CET)
+    - cron: '0 5 * * *'  # Runs every day at 06:00 CET / 07:00 CEST
   workflow_dispatch:
 
 jobs:
@@ -17,8 +17,12 @@ jobs:
       - name: Authenticate GH CLI
         run: echo "${{ secrets.GH_PAT }}" | gh auth login --with-token
 
-      - name: Run Add Issues to Roadmap Project Script
-        run: scripts/add-issues-to-project.sh
+      - name: Run Add Labels Script
+        run: scripts/create-area-labels.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
+      - name: Run Add Milestone Script
+        run: scripts/create-milestone.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
