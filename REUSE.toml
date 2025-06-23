@@ -9,7 +9,7 @@ path = [
     ".gitignore",
     "CODEOWNERS",
     "CODE_OF_CONDUCT.md",
-    "REUSE.toml"
+    "REUSE.toml",
     "scripts/**",
 ]
 precedence = "aggregate"
