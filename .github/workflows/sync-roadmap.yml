@@ -17,8 +17,13 @@ jobs:
       - name: Authenticate GH CLI
         run: echo "${{ secrets.GH_PAT }}" | gh auth login --with-token
 
-      - name: Run Add Issues to Roadmap Project Script
+      - name: Add Issues to Roadmap Project Script
         run: scripts/add-issues-to-project.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
+      - name: Assign Area Labels to Issues Script
+        run: scripts/assign-area-labels-to-issues.sh all
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 

@@ -17,12 +17,12 @@ jobs:
       - name: Authenticate GH CLI
         run: echo "${{ secrets.GH_PAT }}" | gh auth login --with-token
 
-      - name: Run Add Labels Script
+      - name: Add Labels Script
         run: scripts/create-area-labels.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
-      - name: Run Add Milestone Script
+      - name: Add Milestone Script
         run: scripts/create-milestone.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
