@@ -1,0 +1,26 @@
+name: Sync Roadmap Daily
+
+on:
+  schedule:
+    - cron: '0 5 * * *'  # Runs every day at 05:00 UTC (7 AM CET / 6 AM CEST)
+  workflow_dispatch:
+
+jobs:
+  update-roadmap:
+    name: Run Roadmap Updaters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up GitHub CLI
+        uses: cli/cli-action@v2
+
+      - name: Authenticate GH CLI
+        run: echo "${{ secrets.GH_PAT }}" | gh auth login --with-token
+
+      - name: Run Add Labels Script
+        run: .github/scripts/add-labels.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
