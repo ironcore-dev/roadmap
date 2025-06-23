@@ -18,6 +18,6 @@ jobs:
         run: echo "${{ secrets.GH_PAT }}" | gh auth login --with-token
 
       - name: Run Add Labels Script
-        run: .github/scripts/add-labels.sh
+        run: scripts/create-area-labels.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
