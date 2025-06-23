@@ -1,4 +1,4 @@
-name: Sync Roadmap Daily
+name: Create Area Labels and Milestones Daily
 
 on:
   schedule:
@@ -19,5 +19,10 @@ jobs:
 
       - name: Run Add Labels Script
         run: scripts/create-area-labels.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
+      - name: Run Add Milestone Script
+        run: scripts/create-milestone.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
