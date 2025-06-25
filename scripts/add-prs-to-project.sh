@@ -79,9 +79,6 @@ EOF
 
     response=$(gh api graphql -f query="$query")
 
-    echo "$response" | jq . > debug.json
-    echo "🧾 Response saved to debug.json"
-
     hasNextPage=$(echo "$response" | jq -r '.data.repository.pullRequests.pageInfo.hasNextPage')
     endCursor=$(echo "$response" | jq -r '.data.repository.pullRequests.pageInfo.endCursor // ""')
 
