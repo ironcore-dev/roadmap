@@ -48,33 +48,39 @@ for repo in $repos; do
     fi
 
     query=$(cat <<EOF
-    query {
-      repository(owner: "$ORG", name: "$repo") {
-        pullRequests(first: 50, states: [OPEN, CLOSED]$after_part) {
-          pageInfo {
-            hasNextPage
-            endCursor
-          }
+query {
+  repository(owner: "$ORG", name: "$repo") {
+    pullRequests(first: 50, states: [OPEN, MERGED, CLOSED]$after_part) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      nodes {
+        id
+        number
+        title
+        state
+        ... on PullRequest {
+          merged
+        }
+        projectItems(first: 100) {
           nodes {
-            id
-            number
-            title
-            state
-            projectItems(first: 100) {
-              nodes {
-                project {
-                  id
-                }
-              }
+            project {
+              id
             }
           }
         }
       }
     }
+  }
+}
 EOF
     )
 
     response=$(gh api graphql -f query="$query")
+
+    echo "$response" | jq . > debug.json
+    echo "🧾 Response saved to debug.json"
 
     hasNextPage=$(echo "$response" | jq -r '.data.repository.pullRequests.pageInfo.hasNextPage')
     endCursor=$(echo "$response" | jq -r '.data.repository.pullRequests.pageInfo.endCursor // ""')
@@ -84,6 +90,8 @@ EOF
     while IFS= read -r pr; do
       pr_id=$(echo "$pr" | jq -r '.id')
       number=$(echo "$pr" | jq -r '.number')
+      state=$(echo "$pr" | jq -r '.state')
+      merged=$(echo "$pr" | jq -r '.merged')
       existing_project_ids=$(echo "$pr" | jq -r '.projectItems.nodes[].project.id')
 
       if [[ -z "$pr_id" || -z "$number" ]]; then
@@ -96,7 +104,7 @@ EOF
         continue
       fi
 
-      echo "   ➕ Adding to project: PR #$number"
+      echo "   ➕ Adding to project: PR #$number (state: $state, merged: $merged)"
 
       gh api graphql -f query='
         mutation($projectId: ID!, $contentId: ID!) {
@@ -106,6 +114,7 @@ EOF
         }' -f projectId="$project_id" -f contentId="$pr_id" >/dev/null
 
     done <<< "$prs"
+
 
   done
 done
