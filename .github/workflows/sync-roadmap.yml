@@ -27,3 +27,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
+      - name: Adapt Closed Issues Script
+        run: scripts/adapt-closed-issues.sh all
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
