@@ -90,7 +90,7 @@ run_category() {
       query=$(cat <<EOF
         query {
           repository(owner: "$ORG", name: "$repo") {
-            pullRequests(first: 50, states: [CLOSED]$after_part) {
+            pullRequests(first: 50, states: [MERGED, CLOSED]$after_part) {
               pageInfo {
                 hasNextPage
                 endCursor
