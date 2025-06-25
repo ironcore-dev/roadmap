@@ -1,0 +1,23 @@
+name: Sync Roadmap PRs Daily
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # Runs every day at 07:00 UTC (9 AM CEST / 8 AM CET)
+  workflow_dispatch:
+
+jobs:
+  update-roadmap:
+    name: Run Roadmap Updaters
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Authenticate GH CLI
+        run: echo "${{ secrets.GH_PAT }}" | gh auth login --with-token
+
+      - name: Assign Area Labels to PRs Script
+        run: scripts/assign-area-labels-to-prs.sh all
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}

@@ -1,4 +1,4 @@
-name: Sync Roadmap Items Daily
+name: Sync Roadmap Issues Daily
 
 on:
   schedule:
