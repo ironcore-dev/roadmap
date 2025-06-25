@@ -21,3 +21,13 @@ jobs:
         run: scripts/assign-area-labels-to-prs.sh all
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
+      - name: Add PRs to Roadmap Project Script
+        run: scripts/add-prs-to-project.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+
+      - name: Adapt Closed PRs Script
+        run: scripts/adapt-closed-prs.sh all
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
