@@ -177,7 +177,7 @@ if [[ -z "${GITHUB_TOKEN:-}" ]]; then
   exit 1
 fi
 
-# Handle all or single
+# Handle all / all-odd-even / single category
 if [[ "$CATEGORY" == "all" ]]; then
   echo "🚀 Running all categories in parallel..."
   for cat in $CATEGORIES; do
@@ -185,6 +185,23 @@ if [[ "$CATEGORY" == "all" ]]; then
   done
   wait
   echo "✅ All categories done."
+
+elif [[ "$CATEGORY" == "all-odd-even" ]]; then
+  day=$(date +%d)
+  mod=$((10#$day % 2))  # Remove leading zeroes, get 0 or 1
+
+  # Split CATEGORIES into odd/even index groups
+  echo "📆 Running in odd-even mode (Day $day → ${mod:-even}-indexed categories)"
+  idx=0
+  for cat in $CATEGORIES; do
+    if [[ $((idx % 2)) -eq $mod ]]; then
+      run_category "$cat" &
+    fi
+    idx=$((idx + 1))
+  done
+  wait
+  echo "✅ Odd-even run completed."
+
 else
   run_category "$CATEGORY"
 fi
