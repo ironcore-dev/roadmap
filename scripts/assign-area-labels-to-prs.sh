@@ -10,7 +10,7 @@ MAX_JOBS="${MAX_JOBS:-5}"
 CATEGORIES="metal-automation networking storage compute iaas operatingsystem gardener-extension"
 LABELS="area/metal-automation area/networking area/storage area/compute area/iaas area/operatingsystem area/gardener-extension"
 
-metal_automation_repos="metal-operator cloud-provider-metal cluster-api-provider-ironcore-metal ironcore-image FeDHCP boot-operator ipam metal-token-rotate metal-load-balancer-controller os-images maintenance-operator firmware-operator network-operator"
+metal_automation_repos="metal-operator cloud-provider-metal cluster-api-provider-ironcore-metal ironcore-image FeDHCP boot-operator ipam metal-token-rotate metal-load-balancer-controller os-images maintenance-operator firmware-operator network-operator switch-operator"
 networking_repos="metalnet dpservice ironcore-net ebpf-nat64 metalbond"
 storage_repos="ceph-provider ironcore-csi-driver"
 compute_repos="libvirt-provider cloud-hypervisor-provider"

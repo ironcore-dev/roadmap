@@ -8,7 +8,7 @@ PROJECT_NAME="Roadmap"
 
 # Define categories and repos
 CATEGORIES="metal-automation networking storage compute iaas operatingsystem gardener-extension"
-metal_automation_repos="metal-operator cloud-provider-metal cluster-api-provider-ironcore-metal ironcore-image FeDHCP boot-operator ipam metal-token-rotate metal-load-balancer-controller os-images maintenance-operator firmware-operator"
+metal_automation_repos="metal-operator cloud-provider-metal cluster-api-provider-ironcore-metal ironcore-image FeDHCP boot-operator ipam metal-token-rotate metal-load-balancer-controller os-images maintenance-operator firmware-operator switch-operator"
 networking_repos="metalnet dpservice ironcore-net ebpf-nat64 metalbond"
 storage_repos="ceph-provider ironcore-csi-driver"
 compute_repos="libvirt-provider cloud-hypervisor-provider"
