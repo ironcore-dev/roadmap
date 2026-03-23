@@ -1,11 +1,11 @@
 ---
-name: Enhancement 🚀
-about: Track high-level project progress across multiple areas.
+name: Roadmap Item
+about: Track a high-level roadmap item across multiple areas.
 ---
 
 # **Summary**
 <!-- 
-A brief overview of what this enhancement aims to achieve and why it matters.
+A brief overview of what this roadmap item aims to achieve and why it matters.
 Focus on the problem it solves, why it's important, and what outcome we want.
 -->
 _A brief overview._
@@ -14,14 +14,14 @@ _A brief overview._
 
 ## **Scope**
 
-### ✅ **In Scope**
+### **In Scope**
 <!-- 
-Clearly define what's included in this enhancement.
+Clearly define what's included in this roadmap item.
 What work or features are part of this? Be specific.
 -->
 - 
 
-### ❌ **Out of Scope**
+### **Out of Scope**
 <!-- 
 Define what is explicitly excluded to prevent scope creep.
 Mention anything that might sound related but won’t be tackled here.
@@ -32,7 +32,7 @@ Mention anything that might sound related but won’t be tackled here.
 
 ## **Responsible Areas**
 <!-- 
-Pick one or more of the following areas this enhancement touches:
+Pick one or more of the following areas this roadmap item touches:
 Ironcore API, Metal Automation, Networking, Virtualization, Storage, UI, Gardener Extension, Documentation
 -->
 - 
@@ -42,7 +42,7 @@ Ironcore API, Metal Automation, Networking, Virtualization, Storage, UI, Gardene
 
 ## **Contributors**
 <!-- 
-List all contributors, collaborators, or teams actively participating in this enhancement.
+List all contributors, collaborators, or teams actively participating in this initiative.
 Include GitHub handles.
 -->
 - @exampleuser1  
@@ -51,7 +51,7 @@ Include GitHub handles.
 
 ## **Acceptance Criteria**
 <!-- 
-Organize by area (if needed), and list what needs to be true for this enhancement to be considered “done.”
+Organize by area (if needed), and list what needs to be true for this roadmap item to be considered “done.”
 -->
 
 - ### Area 1
