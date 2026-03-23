@@ -20,6 +20,7 @@ LABELS["area/operatingsystem"]="Operating system-related concerns."
 LABELS["area/product"]="Ironcore delivered as a product."
 LABELS["area/security"]="Security and compliance-related topics."
 LABELS["area/storage"]="Storage solutions and related concerns."
+LABELS["area/switch-automation"]="Automation processes for network switch management and operations."
 LABELS["area/ui"]="Related to UI, Dashboard etc."
 LABELS["area/website"]="Website-related issues and improvements."
 
@@ -56,4 +57,3 @@ for REPO in $REPOS; do
 
   echo
 done
-
