@@ -1,23 +1,23 @@
-# Ironcore Enhancements
+# Ironcore Roadmap
 
 [![REUSE status](https://api.reuse.software/badge/github.com/ironcore-dev/roadmap)](https://api.reuse.software/info/github.com/ironcore-dev/roadmap)
 [![GitHub License](https://img.shields.io/static/v1?label=License&message=Apache-2.0&color=blue)](LICENSE)
 
-Central tracking repository for cross-project initiatives, large-scale enhancements, or epics across the Ironcore ecosystem.
+Central tracking repository for roadmap items that represent cross-project initiatives and larger efforts across the Ironcore ecosystem.
 
 ---
 
-## 📌 Purpose
+## Purpose
 
-This repository serves as the **single source of truth for tracking major enhancements** in the Ironcore ecosystem. Enhancements are initiatives that span across multiple areas (e.g., virtualization, metal automation, networking) and require **coordinated planning and execution**.
+This repository serves as the **single source of truth for tracking major roadmap items** in the Ironcore ecosystem. The work tracked here consists of initiatives that span across multiple areas (e.g., virtualization, metal automation, networking) and require **coordinated planning and execution**.
 
-Each issue in this repository represents a **high-level enhancement or epic**, broken down into sub-issues across relevant components or areas. This structure ensures that all efforts align with Ironcore’s overall roadmap, product goals, and organizational visibility.
+Each issue in this repository represents a **high-level roadmap item**, broken down into sub-issues across relevant components or areas. This structure ensures that all efforts align with Ironcore’s overall roadmap, product goals, and organizational visibility.
 
 ---
 
-## 🧠 What Qualifies as an Enhancement?
+## What Qualifies as a Roadmap Item?
 
-An enhancement is typically:
+A roadmap item is typically:
 
 - A **cross-area initiative** requiring collaboration across multiple teams or components
 - A significant effort within a single area that has a broad or strategic impact
@@ -35,7 +35,7 @@ Examples:
 
 ---
 
-## ❓ What’s *Not* an Enhancement?
+## What’s *Not* a Roadmap Item?
 
 Not everything needs to be tracked here. Avoid adding:
 
@@ -43,14 +43,14 @@ Not everything needs to be tracked here. Avoid adding:
 - Routine CI, dependency, or infra updates  
 - Changes limited to a single component that don’t impact broader architecture or UX  
 
-These should be filed in the respective component/project repositories and, if necessary, linked as **sub-issues** under a relevant enhancement.
+These should be filed in the respective component/project repositories and, if necessary, linked as **sub-issues** under a relevant roadmap item.
 
 ---
 
-## 🗂 Structure
+## Structure
 
-- **Top-level issues** are called _Enhancements_ or _Epics_
-- **Each enhancement** includes:
+- **Top-level issues** in this repository are roadmap items
+- **Each roadmap item** should include:
   - A clear summary of the goal
   - Scope (what’s included/excluded)
   - Acceptance criteria
@@ -59,30 +59,20 @@ These should be filed in the respective component/project repositories and, if n
 
 ---
 
-## 🛠 Contributing
+## Contributing
 
-If you have an idea that may qualify as an enhancement:
-1. Validate that it aligns with the enhancement criteria above
+If you have an idea that may qualify as a roadmap item:
+1. Validate that it aligns with the roadmap item criteria above
 2. Circulate it via internal channels or design meetings
-3. File an enhancement issue here using the [`Epic/Initiative` issue template](./.github/ISSUE_TEMPLATE)
+3. File a roadmap item issue here using the relevant issue template in [`.github/ISSUE_TEMPLATE`](./.github/ISSUE_TEMPLATE)
 4. Link relevant sub-issues under it as work progresses
 
 For minor monthly work, contribute through the appropriate `[Improvements]` issue for your area.
 
 ---
 
-## 🔗 Related Areas
-
-- [ironcore-api](https://github.com/...)  
-- [metal-automation](https://github.com/...)  
-- [networking](https://github.com/...)  
-- [virtualization](https://github.com/...)  
-- [product integration](https://github.com/...)
-
----
-
-## 📣 Contact & Discussions
+## Contact & Discussions
 
 - Join relevant internal meetings/syncs  
-- Open or comment on an enhancement issue  
+- Open or comment on a roadmap item issue  
 - Prefer to use Slack or internal channels for brainstorming
