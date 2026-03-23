@@ -7,10 +7,11 @@ ORG="ironcore-dev"
 MAX_JOBS="${MAX_JOBS:-5}"
 
 # Define categories and labels
-CATEGORIES="metal-automation networking storage compute iaas operatingsystem gardener-extension"
-LABELS="area/metal-automation area/networking area/storage area/compute area/iaas area/operatingsystem area/gardener-extension"
+CATEGORIES="metal-automation switch-automation networking storage compute iaas operatingsystem gardener-extension"
+LABELS="area/metal-automation area/switch-automation area/networking area/storage area/compute area/iaas area/operatingsystem area/gardener-extension"
 
-metal_automation_repos="metal-operator cloud-provider-metal cluster-api-provider-ironcore-metal ironcore-image FeDHCP boot-operator ipam metal-token-rotate metal-load-balancer-controller os-images maintenance-operator firmware-operator network-operator switch-operator"
+metal_automation_repos="metal-operator cloud-provider-metal cluster-api-provider-ironcore-metal ironcore-image FeDHCP boot-operator ipam metal-token-rotate metal-load-balancer-controller os-images maintenance-operator firmware-operator"
+switch_automation_repos="network-operator sonic-operator"
 networking_repos="metalnet dpservice ironcore-net ebpf-nat64 metalbond"
 storage_repos="ceph-provider ironcore-csi-driver"
 compute_repos="libvirt-provider cloud-hypervisor-provider"
