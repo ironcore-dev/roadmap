@@ -23,6 +23,7 @@ LABELS["area/storage"]="Storage solutions and related concerns."
 LABELS["area/switch-automation"]="Automation processes for network switch management and operations."
 LABELS["area/ui"]="Related to UI, Dashboard etc."
 LABELS["area/website"]="Website-related issues and improvements."
+LABELS["sovereign-cloud"]="Issues important for sovereign-cloud development."
 
 LABEL_COLOR="0052CC"  # GitHub blue
 
