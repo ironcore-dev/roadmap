@@ -24,6 +24,7 @@ LABELS["area/switch-automation"]="Automation processes for network switch manage
 LABELS["area/ui"]="Related to UI, Dashboard etc."
 LABELS["area/website"]="Website-related issues and improvements."
 LABELS["sovereign-cloud"]="Issues important for sovereign-cloud development."
+LABELS["kind/roadmap"]="Issues that should show up on the CNTF Org level roadmap and cover activities with key stakeholders."
 
 LABEL_COLOR="0052CC"  # GitHub blue
 
